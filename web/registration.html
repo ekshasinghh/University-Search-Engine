@@ -9,11 +9,45 @@ and open the template in the editor.
         <title>Registration Form</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+          }
+
+          li {
+            float: left;
+            color: white;
+          }
+
+          li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+
+          li a:hover:not(.active) {
+            background-color: #111;
+          }
+
+        </style>
     </head>
-    <body style="background-color: whitesmoke">
+    <body style="background-color: black">
+        <ul>
+        <li style="padding: 15px"><bold>UNIVERSITY SEARCH ENGINE</bold></li>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li style="float:right"><a href="login.html">Login</a></li>
+        <li style="float:right"><a href="registration.html">Register</a></li>
+    </ul>
     <center>
-        <h1 style="text-decoration: underline; color: steelblue">Registration Form</h1>
-        <div style="height: 390px; width: 550px; border: 2px solid lightblue; background-color: lightblue; background-image: linear-gradient(-90deg, skyblue, aqua); color: #008CBA">
+        <h1 style="text-decoration: underline; color: white">Registration Form</h1>
+        <div style="height: 390px; width: 550px; border: 2px solid #e6c07b; background-color: #e6c07b; color: black">
             <br>
         <form action="registration.jsp" method="post">
             <table style="line-height: 40px">
@@ -45,7 +79,7 @@ and open the template in the editor.
             
         </div>
         <br>
-        <h4 style="color: steelblue">Already registered. <a href="login.html" style="color: steelblue">Login here</a></h4>
+        <h4 style="color: white">Already registered. <a href="login.html" style="color: #e6c07b">Login here</a></h4>
     </center>
     </body>
 </html>
